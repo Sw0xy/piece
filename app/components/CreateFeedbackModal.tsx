@@ -5,7 +5,7 @@ import { MdOutlineClose } from "react-icons/md";
 import Button from "./Button";
 
 export default function CreateFeedbackModal() {
-    let [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const [title, setTitle] = useState("");
     return (
         <>
