@@ -1,3 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html,body {
+        @apply bg-pieceBgLight dark:bg-pieceBg;
+        font-family: "Inter", sans-serif;
+    }
+}
+
+@layer utilities {
+    .btn-padding {
+        @apply px-5 py-2;
+    }
+    .btn-text-white {
+        @apply text-sm font-medium text-white;
+    }
+    .btn-text-black {
+        @apply text-sm font-medium text-black;
+    }
+    .btn-text-brand {
+        @apply text-sm font-normal text-black dark:text-pieceGray;
+    }
+}
+
+@layer components {
+    .btn-brand {
+        @apply btn-text-brand btn-padding rounded-xl border border-pieceBorderLight dark:border-border bg-white dark:bg-secondary hover:bg-opacity-75;
+    }
+    .btn-primary {
+        @apply btn-text-white btn-padding rounded-xl border border-primary-400 bg-primary-500 hover:bg-primary-600;
+    }
+    .btn-danger {
+        @apply btn-text-white btn-padding rounded-xl border border-danger-400 bg-danger-700 hover:bg-danger-600;
+    }
+    .btn-info {
+        @apply btn-text-white btn-padding rounded-xl border border-info-400 bg-info-500 hover:bg-info-600;
+    }
+    .btn-success {
+        @apply btn-text-white btn-padding rounded-xl border border-success-400 bg-success-500 hover:bg-success-600;
+    }
+    .btn-light {
+        @apply btn-text-black btn-padding rounded-xl border border-gray-500 bg-white hover:bg-gray-200;
+    }
+    .btn-dark {
+        @apply btn-text-white btn-padding rounded-xl border border-zinc-800 bg-black hover:bg-zinc-900;
+    }
+}

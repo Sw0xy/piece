@@ -10,13 +10,16 @@
         "prepare": "is-ci || husky install"
     },
     "dependencies": {
+        "@headlessui/react": "^1.7.5",
         "@remix-run/node": "^1.7.6",
         "@remix-run/react": "^1.7.6",
         "@remix-run/serve": "^1.7.6",
+        "clsx": "^1.2.1",
         "is-ci": "^3.0.1",
         "isbot": "^3.6.5",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.7.1"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.3.0",
